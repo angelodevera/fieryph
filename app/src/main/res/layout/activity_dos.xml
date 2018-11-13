@@ -203,7 +203,6 @@
                         android:layout_marginTop="8dp"
                         android:text="If you encounter smoke during your evacuation, stay low to the floor."
                         android:gravity="center"
-                        android:background="@drawable/capsul_rctangl"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
