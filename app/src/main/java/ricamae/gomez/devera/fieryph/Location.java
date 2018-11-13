@@ -13,7 +13,9 @@ public class Location extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
     }
-
+    public void homeback (View v){
+        super.onBackPressed();
+    }
     public void call(View v) {
         Intent intent = new Intent(Intent.ACTION_DIAL , Uri.parse("tel:" + "911"));
         startActivity(intent);
