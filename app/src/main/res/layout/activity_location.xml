@@ -132,8 +132,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -147,8 +147,8 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="40dp"
@@ -160,35 +160,25 @@
         app:layout_constraintStart_toStartOf="@+id/guideline16"
         app:layout_constraintTop_toTopOf="@+id/iconupbdr" />
 
-    <EditText
+    <TextView
         android:id="@+id/location"
-        android:layout_width="0dp"
+        android:layout_width="330dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
-        android:background="#b13c5879"
+        android:background="@color/rdopat"
+
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:textColor="#ffff"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/boxdownbdr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/boxupbdr" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="581dp"
-        android:layout_height="268dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/mapdownbdr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/map" />
-
     <Button
         android:id="@+id/button3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="40dp"
         android:layout_marginStart="8dp"
@@ -200,5 +190,17 @@
         app:layout_constraintStart_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/boxdownbdr" />
 
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_marginBottom="184dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
