@@ -22,7 +22,7 @@
     </item>
 
     <item>
-        <bitmap android:src="@drawable/hous5"
+        <bitmap android:src="@drawable/back"
             android:gravity="center_vertical"
            ></bitmap>
     </item>

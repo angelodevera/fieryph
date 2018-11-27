@@ -76,6 +76,7 @@ public class Location extends AppCompatActivity implements OnMapReadyCallback {
                 Log.i("4itg", location.toString());
 
                 if(gmap!=null){
+                    gmap.clear();
                     LatLng lats = new LatLng(location.getLatitude(),location.getLongitude());
                     gmap.addMarker(new MarkerOptions().position(lats).title("Your Here"));
                     gmap.moveCamera(CameraUpdateFactory.newLatLng(lats));
